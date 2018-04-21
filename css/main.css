@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #135c79;
+  background: #496cff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2690,8 +2690,12 @@ hr {
 .use-motion .logo-line-after i {
   right: -100%;
 }
+.site-meta {
+  display: flex;
+  align-items: flex-end;
+}
 .site-subtitle {
-  display: none;
+  margin: 11px;
 }
 .site-nav-toggle {
   position: static;
