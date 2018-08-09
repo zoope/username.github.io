@@ -242,6 +242,192 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zoope.github.io/2018/08/09/charles极简教程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zoope J">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zoope's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/09/charles极简教程/" itemprop="url">charles极简教程</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-09T19:33:26+08:00">
+                2018-08-09
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-08-09T22:31:56+08:00">
+                2018-08-09
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/萌新/" itemprop="url" rel="index">
+                    <span itemprop="name">萌新</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><blockquote>
+<p>请不要吐槽我的标点,<code>我就喜欢这样</code>,另外,这是百度输入法的锅 ←_←<br>本文写给<code>萌新</code>,请看清分类,<code>不喜请右上角</code><br>欢迎补充,现在这只是极简教程,以后说不定可以补充成<code>《深入浅出charles》</code>也说不定呢(滑稽)</p>
+</blockquote>
+<h4 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h4><h5 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h5><p>可以去官网下载最新版(收费) <code>https://www.charlesproxy.com/</code><br>至于怎么破解不是本文的重点,自己动手搜吧~<br>可以先下官方正版来使用,每次打开会有10s的等待,不过不影响基本使用  </p>
+<h5 id="charles基本介绍"><a href="#charles基本介绍" class="headerlink" title="charles基本介绍"></a>charles基本介绍</h5><p>官网上有这么一段介绍:<br>Charles is an HTTP proxy / HTTP monitor / Reverse Proxy that enables a developer to view all of the HTTP and SSL / HTTPS traffic between their machine and the Internet. This includes requests, responses and the HTTP headers (which contain the cookies and caching information).<br>通过谷歌机翻可得大概的含义:<br>Charles是一个HTTP代理/ HTTP监视器/反向代理，使开发人员能够查看其机器和Internet之间的所有HTTP和SSL / HTTPS流量。这包括请求，响应和HTTP标头（包含cookie和缓存信息）。  </p>
+<blockquote>
+<p>总得来说谷歌翻译挺牛逼的~  </p>
+</blockquote>
+<p>那么,对我等小前端来说charles的就是用来<code>代理</code>和<code>抓包</code>的,接下来我也会针对这两点展开介绍,另外还会教大家怎么代理手机的请求,这个相当实用~<br>打开charles的软件主界面能看到这个<br><img src="../../../../images/charles/setup.png" alt="avatar"><br><img src="../../../../images/charles/main.png" alt="avatar"><br>主界面的几个常用功能按钮我标注了,有些功能比如写新请求可以自己试试,对于请求出错时的调试很有帮助  </p>
+<h5 id="抓包"><a href="#抓包" class="headerlink" title="抓包"></a>抓包</h5><p>简单来说就是获取本机所有的http请求<br>在打开record开关的情况下 可以在Sequence列表里看到炒鸡多的请求冒出来<br>我放个图<br><img src="../../../../images/charles/request.jpg" alt="avatar"><br>可以在下方request和response区域内找自己想看的内容,我本来也不太懂,直到我被人指着鼻子骂说从来没见过你这么差的前端!!<br>然后我就好好补了一下header, cookie, session的相关知识~<br>不过这些内容在浏览器的network部分也都能看到,所以并不是很牛批<br><img src="../../../../images/charles/network.png" alt="avatar"><br>比较牛啤实用的是给手机连代理和抓包</p>
+<h5 id="手机连接charles"><a href="#手机连接charles" class="headerlink" title="手机连接charles"></a>手机连接charles</h5><p>先说一下基本原理,就是手机wifi代理连接电脑ip的某个接口,然后手机上所有的请求都会过一遍电脑上的charles,那么平时比较难调试的手机H5请求就能很方便的操作了  </p>
+<ul>
+<li>前提是手机和电脑在同一wifi下</li>
+<li>获取本机ip,window下cmd用<code>ipconfig</code>指令获取,mac可以看wifi设置<br><img src="../../../../images/charles/wifi.png" alt="avatar"></li>
+<li>charles部分的配置: settings =&gt; proxy settings<br><img src="../../../../images/charles/proxySettings.png" alt="avatar"><br>port就用默认的8888好了,下面的选项勾上<br><img src="../../../../images/charles/proxies.png" alt="avatar"><br>macOS或者Windows的选项,勾上框选的两项<br><img src="../../../../images/charles/enable proxy.png" alt="avatar"></li>
+<li>手机的配置:<br>找到和电脑相同的那个wifi, 点右上角的叹号,安卓手机的操作不太统一,有些是长按,有些是点按,大家自己探索~<br><img src="../../../../images/charles/iphone wifi.png" alt="avatar"><br>找到http代理选项,选手动,填入自己的ip和8888端口号,安卓一般需要点开高级设置才能找到<br><img src="../../../../images/charles/wifi proxy.png" alt="avatar"></li>
+<li>然后在你的手机上随意打开一个网站<br>会看到类似这样的弹窗,必须要点allow,我这里不是第一次连弹不出来..<br><img src="../../../../images/charles/allow.png" alt="avatar"><br>接下来你手机上的请求就能被抓取了, 比如我打开一个网站 <code>http://haoke.163.com</code> 就可以在电脑上看到相应的静态资源请求<br><img src="../../../../images/charles/haoke.png" alt="avatar">  <blockquote>
+<p>这里主要是代理http的请求,https就不能直接解析了  </p>
+</blockquote>
+</li>
+</ul>
+<p>至此,就是手机连接charles代理的过程,结合下一节的http代理就可以实现在家调试线上页面了~</p>
+<h5 id="代理"><a href="#代理" class="headerlink" title="代理"></a>代理</h5><p>代理的原理其实我说不清楚~举例来说原来线上一个网页的html静态资源路径是这样的<br><code>http://online/nichousha/index.html</code><br>而我希望用我本地的资源替代(本地我有node服务器把资源放到localhost某个端口下)<br><code>http://localhost/index.html</code> 或者 <code>http://&lt;本机ip&gt;/index.html</code><br>那么我就希望把<code>http://online/nichousha/</code>替换为<code>http://localhost:8000/</code><br>那这一步替换charles可以帮我们做到,也就是代理的过程<br>所以你理解了<code>替换</code>这个概念,相关的配置也就很简单了</p>
+<ul>
+<li>找到Tools =&gt; Map remote (较新系统版本的mac在最上面,window在软件菜单栏很好找)<br><img src="../../../../images/charles/remote.png" alt="avatar"><br>点add新增<br><img src="../../../../images/charles/reomte setting.png" alt="avatar"><br>把上面的例子的<code>替换过程</code>配置到里面<br><img src="../../../../images/charles/mapping.png" alt="avatar"><br>这样就是一个最基本的代理过程←_←  </li>
+</ul>
+<p>感觉云里雾里?还是实际举个栗子吧<br>我这儿自家官网原来长这样<br><img src="../../../../images/charles/old haoke.png" alt="avatar"><br>然后我通过charles代理了本地资源(这里代理了根目录下 html, js, css, 图片文件)<br><img src="../../../../images/charles/my mapping.png" alt="avatar"><br>我就可以把官网改成这样了(两次都是在haoke.163.com这个域名下访问的)<br>一般代理前端资源以后会有缓存,可以强制刷新就能看到代理后的效果了(ctrl+f5)<br><img src="../../../../images/charles/new haoke.png" alt="avatar"></p>
+<p>同样的,可以反向代理解决跨域问题,大家回忆<code>替换</code>这个概念,就是把本地域名请求替换成目标服务器的请求:<br><code>http://localhost/server/</code> =&gt; <code>http://target.com/server/</code><br>这里就不展开了,自己在实际工作中多试几次就理解了  </p>
+<blockquote>
+<p>需要注意的是,charles代理的配置项先后顺序是有差别的,在前面的配置项先生效  </p>
+</blockquote>
+<p><img src="../../../../images/charles/end.png" alt="avatar"></p>
+<h4 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h4><p>更多功能和用法就留给大家自己去发掘吧~我作为前端还是相当推荐这款工具的,可视化界面和容易理解的操作,就酱~</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://zoope.github.io/2018/04/21/来说说面试被问到-闭包-吧/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -455,7 +641,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -477,7 +663,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
